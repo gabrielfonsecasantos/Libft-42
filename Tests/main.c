@@ -87,20 +87,27 @@ printf("###############################################\n\n");    // TEST FOR FT
         return (1);
     }
     printf("SUCCESS!\n\n");
-printf("###############################################\n\n");    // TESTING FT_STRLCAT
-    char    dest_ft1[10] = "Ola";
+printf("###############################################\n\n");    
+    // TESTING FT_STRLCAT
+    char    dest_ft1[6] = "Hello";
     char    src_ft1[] = " Mundo";
-    char    dest1[10] = "Ola";
+    char    dest1[6] = "Hello";
     char    src1[] = " Mundo";
     
     printf("TESTING FT_STRLCAT\n");
-    ft_strlcat(dest_ft1, src_ft1, 1);
-    strlcat(dest1, src1, 1);
+    ft_strlcat(dest_ft1, src_ft1, 3);
+    strlcat(dest1, src1, 3);
+    printf("Test case 1: ft_strlcat -> %s\n strlcat -> %s\n", dest_ft1, dest1);
     if (strcmp(dest_ft1, dest1) != 0)
     {
         printf("ERROR: strings do not match...\n");
         return (1);
     }
+    //if (ft_strlcat(dest_ft1, src_ft1, 10) != strlcat(dest1, src1, 10))
+    //{
+        printf("checking return value for ft_strlcat: %ld, ", ft_strlcat(dest_ft1, src_ft1, 3));
+        printf("checking return value for strlcat: %ld\n", strlcat(dest1, src1, 3));
+    //}
     printf("SUCCESS!\n\n");
 printf("###############################################\n\n");    // TESTING FT_TOUPPER
     char    test_upper = 'a';
