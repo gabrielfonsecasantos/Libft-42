@@ -6,11 +6,11 @@
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/28 16:54:08 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/05/28 17:24:03 by gviniciu         ###   ########.fr       */
+/*   Updated: 2026/06/02 16:20:29 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
 	char	*ptr;
 	int		i;
@@ -20,6 +20,7 @@ int	atoi(const char *nptr)
 	ptr = (char *)nptr;
 	sign = 1;
 	i = 0;
+	res = 0;
 	while (ptr[i] >= 9 && ptr[i] <= 13 || ptr[i] == 32)
 		i++;
 	if (ptr[i] == '+' || ptr[i] == '-')

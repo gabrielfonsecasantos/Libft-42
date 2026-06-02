@@ -6,7 +6,7 @@
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 18:44:29 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/05/28 14:57:10 by gviniciu         ###   ########.fr       */
+/*   Updated: 2026/06/02 19:12:26 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	ptr_dest = (unsigned char *)dest;
 	ptr_src = (unsigned char *)src;
 	i = 0;
+	if (ptr_dest == NULL && ptr_src == NULL)
+		return (NULL);
 	while (i < n)
 	{
 		ptr_dest[i] = ptr_src[i];

@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/28 15:01:30 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/02 18:57:18 by gviniciu         ###   ########.fr       */
+/*   Created: 2026/06/02 18:59:40 by gviniciu          #+#    #+#             */
+/*   Updated: 2026/06/02 19:12:49 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
-char	*ft_strchr(const char *s, int c)
+char	*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
 	size_t	size;
 	char	*str;
 
 	str = (char *)s;
-	size = ft_strlen(str);
-	i = 0;
-	while (i < size + 1)
+	size = ft_strlen(str) + 1;
+	str += size - 1;
+	i = size;
+	while (i > 0)
 	{
 		if (*str == (char)c)
 			return (str);
-		str++;
-		i++;
+		str--;
+		i--;
 	}
 	return (NULL);
 }

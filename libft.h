@@ -6,7 +6,7 @@
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 16:04:25 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/05/28 20:52:14 by gviniciu         ###   ########.fr       */
+/*   Updated: 2026/06/02 19:32:06 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,5 +35,7 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strdup(const char *s);
+char	*ft_strrchr(const char *s, int c);
+char    *ft_strnstr(const char *big, const char *little, size_t len);
 
 #endif
