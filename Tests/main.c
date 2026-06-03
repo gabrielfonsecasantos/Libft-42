@@ -4,11 +4,11 @@
 #include <stdio.h>
 #include <bsd/string.h>
 #include "libft.h"
+#include <string.h>
 
 // Function's Prototypes
 void    test_all_is(void);
 void    test_is(int(*ft_test)(int c), int (*f_original)(int c), char *txt);
-# include <string.h>
 int main(void)
 {
     test_all_is();
@@ -147,6 +147,14 @@ printf("###############################################\n\n");    // TESTING FT_
     printf("TESTING FT_STRCHR...\n");
     printf("%c, %c\n\n", *ft_strchr(string, 'c'), *strchr(string, 'a'));
     printf("SUCCESS!\n\n");
+    printf("###############################################\n\n");
+
+    printf("TESTING FT_STRNSTR...\n");
+    char    ftstrnstr[] = "abacaxi";
+    char    str_needle[] = "cax";
+    
+    printf("%c\n", *ft_strnstr(ftstrnstr, str_needle, 7));
+    printf("%c\n\n", *strnstr(ftstrnstr, str_needle, 7));
     printf("###############################################\n\n");
     return (0);
 }

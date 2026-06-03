@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+         #
+#    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/05/28 15:37:34 by gviniciu         ###   ########.fr        #
+#    Updated: 2026/06/03 14:38:27 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,9 +14,11 @@ NAME := main
 
 CC := cc
 
-CFLAGS := -Wall -Wextra -Werror -lbsd
+CFLAGS := -Wall -Wextra -Werror
 
 IFLAGS := -I.. -L.. -lft
+
+LIBS = -lbsd
 
 SRCS := main.c
 
@@ -30,7 +32,7 @@ all: $(NAME)
 $(NAME): $(SRCS)
 	@$(MAKE) -C ..
 	@$(MAKE) -C ..
-	$(CC) $(CFLAGS) $(SRCS) -o $(NAME) $(IFLAGS)
+	$(CC) $(CFLAGS) $(SRCS) -o $(NAME) $(IFLAGS) ${LIBS}
 
 # Compiling .c files to .o
 # %.o: %.c
