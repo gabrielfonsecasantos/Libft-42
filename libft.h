@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/25 16:04:25 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/03 15:32:22 by gabriel          ###   ########.fr       */
+/*   Updated: 2026/06/04 22:11:02 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,5 +38,6 @@ char	*ft_strdup(const char *s);
 char	*ft_strrchr(const char *s, int c);
 char   *ft_strnstr(const char *big, const char *little, size_t len);
 void  *ft_calloc(size_t nmemb, size_t size);
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/06/03 15:30:52 by gabriel          ###   ########.fr        #
+#    Updated: 2026/06/04 22:09:46 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,7 +23,7 @@ SRCS := ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_toupper.c ft_tolower.c ft_strchr.c \
 			ft_atoi.c ft_memcmp.c ft_memchr.c \
 			ft_strncmp.c ft_strdup.c ft_strrchr.c \
-			ft_strnstr.c ft_calloc.c
+			ft_strnstr.c ft_calloc.c ft_substr.c
 
 
 # Object files
