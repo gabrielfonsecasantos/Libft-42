@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/06/03 15:01:36 by gabriel           #+#    #+#             */
-/*   Updated: 2026/06/05 12:43:41 by gviniciu         ###   ########.fr       */
+/*   Created: 2026/06/05 12:27:42 by gviniciu          #+#    #+#             */
+/*   Updated: 2026/06/05 12:59:38 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_calloc(size_t nmemb, size_t size)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	unsigned char	*ptr;
-	size_t			i;
+	size_t	size;
+	char	*str;
+	char	*ptr_s1;
+	char	*ptr_s2;
 
-	if (nmemb * size > 2147483647)
+	ptr_s1 = (char *)s1;
+	ptr_s2 = (char *)s2;
+	if (!ptr_s1 || !ptr_s2)
 		return (NULL);
-	if (nmemb == 0 || size == 0)
-	{
-		ptr = malloc(1);
-		return (ptr);
-	}
-	ptr = malloc(nmemb * size);
-	if (!ptr)
+	size = ft_strlen(s1) + ft_strlen(s2);
+	str = malloc(sizeof(char) * size + 1);
+	if (!str)
 		return (NULL);
-	i = 0;
-	while (i < nmemb * size)
-	{
-		ptr[i] = '\0';
-		i++;
-	}
-	return ((void *)ptr);
+	ft_strlcpy(str, ptr_s1, ft_strlen(ptr_s1) + 1);
+	ft_strlcat(str, ptr_s2, size + 1);
+	return (str);
 }
