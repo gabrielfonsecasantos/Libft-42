@@ -6,7 +6,7 @@
 #    By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/06/05 16:19:45 by gviniciu         ###   ########.fr        #
+#    Updated: 2026/06/08 18:27:14 by gviniciu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,9 @@ SRCS := ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_strncmp.c ft_strdup.c ft_strrchr.c \
 			ft_strnstr.c ft_calloc.c ft_substr.c \
 			ft_strjoin.c ft_strtrim.c ft_split.c \
-			ft_itoa.c
+			ft_itoa.c ft_strmapi.c ft_striteri.c \
+			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
+			ft_putnbr_fd.c
 
 
 # Object files
