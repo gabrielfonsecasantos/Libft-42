@@ -6,7 +6,7 @@
 #    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/06/09 18:24:47 by gabriel          ###   ########.fr        #
+#    Updated: 2026/06/09 18:38:47 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,7 +48,7 @@ $(NAME): $(OBJS)
 .PHONY: all clean fclean re
 
 clean:
-	rm -f $(OBJS)
+	rm -f $(OBJS) *.gch
 
 fclean: clean
 	rm -f $(NAME)

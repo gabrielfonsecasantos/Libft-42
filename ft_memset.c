@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 14:44:31 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/09 18:14:47 by gabriel          ###   ########.fr       */
+/*   Updated: 2026/06/09 20:32:37 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 void	*ft_memset(void *s, int c, size_t n)
 {
-	size_t		i;
-	char			*ptr;
+	size_t	i;
+	char	*ptr;
 
 	i = 0;
 	ptr = (char *)s;

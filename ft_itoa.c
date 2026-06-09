@@ -6,7 +6,7 @@
 /*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 16:16:44 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/09 17:24:22 by gabriel          ###   ########.fr       */
+/*   Updated: 2026/06/09 20:32:14 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	ft_get_string_size(long num)
 {
-	int	counter;
+	int		counter;
 	long	size;
-	
+
 	counter = 0;
 	if (num <= 0)
 	{
@@ -39,8 +39,8 @@ char	*ft_itoa(int n)
 	char	*res;
 	int		counter;
 	int		i;
-  long     num;
-	
+	long	num;
+
 	num = n;
 	counter = ft_get_string_size(num);
 	res = malloc(sizeof(char) * (counter + 1));

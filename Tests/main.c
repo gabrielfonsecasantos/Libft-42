@@ -160,7 +160,7 @@ printf("###############################################\n\n");    // TESTING FT_
     const char s1[] = "";
     const char set[] = "";
 
-    printf("%s", ft_strtrim(s1, set));
+    printf("%s\n", ft_strtrim(s1, set));
     return (0);
 }
 
