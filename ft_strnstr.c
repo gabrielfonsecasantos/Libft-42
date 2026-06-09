@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/02 19:14:59 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/05 12:38:23 by gviniciu         ###   ########.fr       */
+/*   Updated: 2026/06/09 18:21:23 by gabriel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	char	*str;
-	char	*str_big;
 
 	if (*little == '\0')
 		return ((char *)big);

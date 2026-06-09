@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+         #
+#    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/06/08 18:27:14 by gviniciu         ###   ########.fr        #
+#    Updated: 2026/06/09 18:24:47 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,10 +42,10 @@ $(NAME): $(OBJS)
 
 # Compiling .c files to .o
 %.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 # Clean .o files
-.PHONY = all clean fclean re
+.PHONY: all clean fclean re
 
 clean:
 	rm -f $(OBJS)
@@ -53,5 +53,5 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-re: flclean all
+re: fclean all
  

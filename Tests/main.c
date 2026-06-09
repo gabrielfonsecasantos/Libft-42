@@ -156,6 +156,11 @@ printf("###############################################\n\n");    // TESTING FT_
     printf("%c\n", *ft_strnstr(ftstrnstr, str_needle, 7));
     printf("%c\n\n", *strnstr(ftstrnstr, str_needle, 7));
     printf("###############################################\n\n");
+    printf("TESTING FT_STRTRIM...\n");
+    const char s1[] = "";
+    const char set[] = "";
+
+    printf("%s", ft_strtrim(s1, set));
     return (0);
 }
 
