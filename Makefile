@@ -6,7 +6,7 @@
 #    By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/05/25 15:06:21 by gviniciu          #+#    #+#              #
-#    Updated: 2026/06/10 00:38:04 by gabriel          ###   ########.fr        #
+#    Updated: 2026/06/10 15:21:25 by gabriel          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,8 @@ SRCS := ft_isalpha.c ft_isdigit.c ft_isalnum.c \
 			ft_putchar_fd.c ft_putstr_fd.c ft_putendl_fd.c \
 			ft_putnbr_fd.c ft_lstnew.c ft_lstadd_front.c \
 			ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-			ft_lstdelone.c ft_lstiter.c ft_lstmap.c
+			ft_lstdelone.c ft_lstiter.c ft_lstmap.c \
+			ft_lstclear.c
 
 
 # Object files
