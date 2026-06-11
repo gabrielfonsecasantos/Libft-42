@@ -6,7 +6,7 @@
 /*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 15:01:36 by gabriel           #+#    #+#             */
-/*   Updated: 2026/06/05 12:43:41 by gviniciu         ###   ########.fr       */
+/*   Updated: 2026/06/11 14:07:17 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,22 +16,15 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	unsigned char	*ptr;
 	size_t			i;
+	size_t			mult;
 
-	if (nmemb * size > 2147483647)
+	mult = size * nmemb;
+	if (nmemb != 0 && (mult / nmemb) != size)
 		return (NULL);
-	if (nmemb == 0 || size == 0)
-	{
-		ptr = malloc(1);
-		return (ptr);
-	}
 	ptr = malloc(nmemb * size);
 	if (!ptr)
 		return (NULL);
 	i = 0;
-	while (i < nmemb * size)
-	{
-		ptr[i] = '\0';
-		i++;
-	}
+	ft_bzero(ptr, mult);
 	return ((void *)ptr);
 }

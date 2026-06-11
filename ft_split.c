@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gabriel <gabriel@student.42.fr>            +#+  +:+       +#+        */
+/*   By: gviniciu <gviniciu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/05 13:38:56 by gviniciu          #+#    #+#             */
-/*   Updated: 2026/06/09 20:28:42 by gabriel          ###   ########.fr       */
+/*   Updated: 2026/06/11 19:42:24 by gviniciu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_word_counter(char *str, char c)
+static size_t	ft_word_counter(char *str, char c)
 {
 	size_t	counter;
 	size_t	i;
@@ -29,7 +29,7 @@ size_t	ft_word_counter(char *str, char c)
 	return (counter);
 }
 
-size_t	ft_char_counter(char *str, char c)
+static size_t	ft_char_counter(char *str, char c)
 {
 	size_t	counter;
 
